@@ -123,20 +123,19 @@ const About = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleExecuteCode = () => {
-    // Clear the console output before running new code
-    setOutput('');
+    setOutput(''); // Clear output before running new code
   
     try {
       // Temporarily override console.log to capture its output
       const originalConsoleLog = console.log;
       console.log = (...args) => {
-        // Capture all console.log outputs and update the output state
         setOutput((prevOutput) => prevOutput + args.join(' ') + '\n');
       };
   
-      // Use Function constructor instead of eval
-      const func = new Function(inputCode);
-      func(); // Execute the code
+      // Execute the predefined code directly based on the activeTab
+      const currentExample = codeExamples[activeTab];
+      // eslint-disable-next-line no-eval
+      eval(currentExample.code); // Safely use eval for predefined code
   
       // Restore the original console.log
       console.log = originalConsoleLog;
@@ -145,6 +144,7 @@ const About = () => {
       setOutput('Error: ' + error.message);
     }
   };
+  
   
   
   
