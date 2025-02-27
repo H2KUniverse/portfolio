@@ -370,12 +370,12 @@ section ul li {
 /* Top-left GitHub Icon */
 .top-left-github {
   position: absolute;
-  top: -7%;
-  left: -5%;
-  font-size: 4rem;
+    top: -7%;
+    left: -5%;
+    font-size: 3rem;
   color: #fff;
   transform: translate(0, 0); /* Adjust the icon's final position */
-  filter: drop-shadow(0 0 2px #00b5ff) drop-shadow(0 0 4px #00b5ff) drop-shadow(0 0 6px #00b5ff);
+  filter: drop-shadow(0 0 1px #ff7f00) drop-shadow(0 0 2px #ff7f00) drop-shadow(0 0 3px #ff7f00); /* Orange glow */
 }
 
 /* Glowing Blue Effect for the GitHub Icon */
@@ -393,4 +393,8 @@ section ul li {
 /* Glowing Blue Effect */
 .github-icon:hover {
   transform: scale(1.1);
+}
+
+.h2projects {
+  margin-top: 27vh;
 }
