@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/home.css'; // Custom CSS for the Home page (styles)
+import '../App.css'; // Custom CSS for the Home page (styles)
 
 const Home = () => {
   return (
@@ -78,4 +78,6 @@ const Home = () => {
   );
 };
 
+
+// Export the Home component
 export default Home;

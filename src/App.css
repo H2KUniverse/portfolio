@@ -35,15 +35,36 @@ body {
   margin-bottom: 30px;
 }
 
-.sidebar nav {
-  flex: 0.9; /* Take remaining space */
-  display: flex;
-  justify-content: center; /* Center menu vertically */
-  align-items: center;   /* Center menu horizontally */
-  width: 100%;
-  margin-top: -5%; /* Move the menu 5% closer to the top */
+.imgLogo {
+  max-width: 100%;
 }
 
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px; /* To give some space at the top */
+  overflow: hidden; /* Ensure no overflow */
+  z-index: 10; /* Ensure sidebar is on top of other content */
+}
+
+/* Container for navigation and beam */
+.sidebar nav {
+  flex: 1; /* Allow nav to take up available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch; /* Ensure nav items stretch across */
+  position: relative; /* Necessary for positioning the beam inside */
+  width: 100%;
+  margin-top: 136%;
+}
+
+/* Navigation list styling */
 .sidebar nav ul {
   list-style: none;
   padding: 0;
@@ -54,10 +75,11 @@ body {
 
 .sidebar nav ul li {
   display: block;
-  width: 100%; /* Full width clickable area */
+  width: 100%;
   padding: 10px;
   cursor: pointer;
   text-align: center;
+  position: relative; /* Necessary for positioning the active beam */
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -67,8 +89,23 @@ body {
 }
 
 .sidebar nav ul li.active {
-  background-color: #555;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+/* Active Beam */
+.sidebar .active-beam {
+  position: absolute;
+  right: 0;
+  width: 10px; /* Width of the beam */
+  background-color: white;
+  transition: top 0.3s ease, height 0.3s ease;
+  z-index: 5; /* Ensure beam is above other elements */
+}
+
+
+/* Optional: Add some padding or margins to space out the nav items */
 
 .main-content {
   margin-left: 250px;
@@ -79,9 +116,10 @@ body {
   perspective: 1000px; /* Add 3D perspective */
 }
 
-/* Style for the section itself */
+/* Section Styling */
 section {
-  width: calc(100% - 40px); /* Full available width minus padding */
+  width: calc(100% - 10px);
+  margin-left: 6px;
   text-align: center;
   height: 95vh; /* Almost full viewport height */
   display: flex;
@@ -94,7 +132,10 @@ section {
   transform: rotateX(90deg); /* Start fully rotated, off-screen */
   animation: sectionFlipIn 2s cubic-bezier(0.25, 0, 0.5, 1) forwards; /* Custom easing */
   overflow-x: hidden; /* Prevent overflow to the right */
+  position: relative;
 }
+
+
 
 /* Keyframe for the section animation */
 @keyframes sectionFlipIn {
@@ -142,6 +183,14 @@ section ul li {
   font-size: 1.1rem;
 }
 
+.projects::-webkit-scrollbar {
+  width: 0px; /* Hide the scrollbar */
+  height: 0px; /* Hide the scrollbar for horizontal scroll */
+}
+
+.projects::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Ensure the scrollbar is transparent */
+}
 
 /* Console */
 
@@ -303,6 +352,7 @@ section ul li {
   background-color: #1e1e1e;
   color: white;
   text-align: center;
+  overflow-y: scroll; /* Enable scrolling */
 }
 
 .projects h2 {
