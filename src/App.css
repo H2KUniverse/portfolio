@@ -61,7 +61,6 @@ body {
   align-items: stretch; /* Ensure nav items stretch across */
   position: relative; /* Necessary for positioning the beam inside */
   width: 100%;
-  margin-top: 136%;
 }
 
 /* Navigation list styling */

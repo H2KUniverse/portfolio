@@ -1,5 +1,5 @@
 import car1Image from '../images/car1.jpg'; // Import the image at the top of your file
-import { FaGithub, FaCogs, FaAddressBook, FaAirbnb, FaAndroid } from 'react-icons/fa'; // Import Github icon from React Icons
+import { FaGithub, FaCogs, FaAddressBook, FaAirbnb } from 'react-icons/fa'; // Import Github icon from React Icons
 
 const Projects = () => {
     // Example project data

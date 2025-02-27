@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
+import UnityGame from './pages/UnityGame'; // Import the UnityGame component
 import logo from '../src/images/logo.png'; // Import the logo at the top of your file¨
 import Projects from './pages/Projects';
 
@@ -9,7 +10,6 @@ import './App.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
-
 
   const handleNavigation = (section) => {
     setActiveSection(section);
@@ -29,6 +29,7 @@ function App() {
             <li onClick={() => handleNavigation('skills')} className={activeSection === 'skills' ? 'active' : ''}>Work experience</li>
             <li onClick={() => handleNavigation('projects')} className={activeSection === 'projects' ? 'active' : ''}>Projects</li>
             <li onClick={() => handleNavigation('contact')} className={activeSection === 'contact' ? 'active' : ''}>Get in touch</li>
+            <li onClick={() => handleNavigation('unityGame')} className={activeSection === 'unityGame' ? 'active' : ''}>UnityGame</li>
           </ul>
         </nav>
       </div>
@@ -40,6 +41,7 @@ function App() {
         {activeSection === 'skills' && <Skills />}
         {activeSection === 'projects' && <Projects />}
         {activeSection === 'contact' && <Contact />}
+        {activeSection === 'unityGame' && <UnityGame />}
       </div>
     </div>
   );
