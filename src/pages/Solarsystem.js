@@ -363,21 +363,53 @@ const PlanetInfo = () => {
             <label className='closeBig' for='closeVenus'></label>
             <input className='read' id='closeVenus' name='venusRead' type='radio'></input>
             <div className='panel'>
-                <h1>Venus</h1>
-                <p>Venus, the second planet from the sun, is named for the Roman goddess of love and beauty. The planet — the only planet named after a female — may have been named for the most beautiful deity of her pantheon because it shone the brightest of the five planets known to ancient astronomers.</p>
-                <p>In ancient times, Venus was often thought to be two different stars, the evening star and the morning star — that is, the ones that first appeared at sunset and sunrise. In Latin, they were respectively known as Vesper and Lucifer. In Christian times, Lucifer, or "light-bringer," became known as the name of Satan before his fall. However, further observations of Venus in the space age show a very hellish environment. This makes Venus a very difficult planet to observe from up close, because spacecraft do not survive long on its surface.</p>
-                {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                <img src='https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2014/2-whatistheave.jpg'></img>
-                <h2>A day on Venus lasts longer than a year.</h2>
-                <p>It takes 243 Earth days to rotate once on its axis (sidereal day). The planet’s orbit around the Sun takes 225 Earth days, compared to the Earth’s 365. A day on the surface of Venus (solar day) takes 117 Earth days.</p>
-                <h2>Venus rotates in the opposite direction to most other planets.</h2>
-                <p>This means that Venus is rotating in the opposite direction to the Sun, this is also know as a retrograde rotation. A possible reason might be a collision in the past with an asteroid or other object that caused the planet to alter its rotational path. It also differs from most other planets in our solar systm by having no natural satellites.</p>
-                <h2>Venus is the second brightest object in the night sky.</h2>
-                <p>Only the Moon is brighter. With a magnitude of between -3.8 to -4.6 Venus is so bright it can be seen during daytime on a clear day.</p>
-                <h2>Atmospheric pressure on Venus is 92 times greater than the Earth’s.</h2>
-                <p>While its size and mass are similar to Earth, the small asteroids are crushed when entering its atmosphere, meaning no small craters lie on the surface of the planet. The pressure felt by a human on the surface would be equivalent to that experienced deep beneath the sea on Earth.</p>
-                <br></br>
+                <h1>Work Experience</h1>
+                {/**<img src={Workpicture} style={{ maxWidth: "250px", width: "100%", height: "auto", right: "0" }} alt="Work Example" />**/}
+
+                <h2>Ejner Hessel A/S</h2>
+                <h3>Datateknik Elev Programmering</h3>
+                <p>Aug 2020 - May 2022 · 1 yr 10 mos · Brande, Middle Jutland, Denmark</p>
+                <p>
+                    As a programming trainee at Ejner Hessel, I worked on a variety of projects to enhance the company's internal systems. I focused primarily on backend development, API integrations, and system optimization using technologies such as the .NET Framework, ASP.NET Web API, Entity Framework, and AngularJS. One key project was the replacement of the company’s internal system for managing sales, leasing, and invoicing, as well as integrating third-party systems via REST APIs.
+                </p>
+                <p>
+                    Additionally, I contributed to the integration of a third-party OCR system for digitalizing key company documents, making processes faster and more efficient. The system I worked on communicated across five different physical servers in Ejner Hessel’s virtual environment, improving data management and streamlining internal workflows.
+                </p>
+                <p>
+                    The projects involved using technologies like SQL, Microsoft Azure, MySQL, and REST APIs, where I gained practical experience in handling large-scale solutions and working within corporate IT infrastructures.
+                </p>
+
+                <h2>The LEGO Group</h2>
+                <h3>Mobile Developer Trainee</h3>
+                <p>Mar 2019 - Mar 2020 · 1 yr 1 mo · Billund, South Denmark, Denmark</p>
+                <p>
+                    During my time as a mobile developer trainee at The LEGO Group, I worked on various mobile development projects, primarily focusing on Android and iOS applications. My role involved designing and developing user-friendly mobile experiences, integrating backend services, and optimizing app performance. One of the main projects I contributed to was the development of new features and functionalities for the LEGO mobile applications, aimed at improving user engagement and providing a seamless experience for users across different devices.
+                </p>
+                <p>
+                    I also worked on implementing Agile methodologies and collaborated with cross-functional teams in a fast-paced, iterative environment. This experience helped me improve my mobile development skills while contributing to an innovative global brand.
+                </p>
+                <p>
+                    Working with technologies like Swift, Kotlin, Xcode, and Gitlab, I was involved in the full development cycle, from the initial planning phases to testing and deployment. I also focused on improving the overall user experience (UX) by refining user interfaces and ensuring that the applications met the highest standards of quality and performance.
+                </p>
+
+                <h3>IT Support Trainee</h3>
+                <p>Mar 2018 - Mar 2019 · 1 yr 1 mo · Billund, South Denmark, Denmark</p>
+                <p>
+                    As an IT support trainee at The LEGO Group, I provided global end-user support, assisting with troubleshooting technical issues and helping to resolve software and hardware problems for employees worldwide. During this time, I utilized ITIL frameworks and tools like ServiceNow, while also working on various projects to automate support tasks and improve system processes.
+                </p>
+
+                <h2>Trifork</h2>
+                <h3>Software Developer Intern</h3>
+                <p>Jan 2021 - Jun 2021 · 6 mos · Aarhus, Denmark</p>
+                <p>
+                    During my time as a software developer intern at Trifork, I worked on various exciting projects involving cloud solutions and web development. I was involved in the development of scalable, high-performance applications using Microsoft Azure and .NET technologies. A key project I contributed to was the creation of cloud-based solutions for e-commerce platforms, where I was responsible for integrating third-party APIs, optimizing backend systems, and ensuring seamless data flow between platforms.
+                </p>
+                <p>
+                    In addition to backend development, I also had the opportunity to explore frontend technologies like React and JavaScript. I worked closely with senior developers and contributed to the development of responsive, user-friendly interfaces for clients. This internship allowed me to strengthen my skills in both cloud development and full-stack web development, while working with cutting-edge technologies in a collaborative environment.
+                </p>
             </div>
+
+
             <input className='read' id='readEarth' name='earthRead' type='radio'></input>
             <label className='closeBig' for='closeEarth'></label>
             <input className='read' id='closeEarth' name='earthRead' type='radio'></input>
