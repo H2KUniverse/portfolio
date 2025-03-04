@@ -191,7 +191,7 @@ body label.menu:hover h2, body label.menu:hover h3 {
   opacity: 1;
 }
 body label.menu.mercury h2 .pip {
-  background: #E8927C;
+  background: #dfe3e7 ;
 }
 body label.menu.venus h2 .pip {
   background: #b45d15;
@@ -225,6 +225,7 @@ body label.menu .preview {
   background-size: auto 100% !important;
   position: absolute;
   border-radius: 100px;
+  opacity: 0;
 }
 body label.menu .info {
   position: relative;
@@ -239,12 +240,12 @@ body label.menu h3 {
   margin: 0;
   font-weight: 100;
   letter-spacing: 2px;
-  filter: drop-shadow(0 0 0px white) drop-shadow(0 0 0px white) drop-shadow(0 0 4px white);
+  /**filter: drop-shadow(0 0 0px white) drop-shadow(0 0 0px white) drop-shadow(0 0 4px white);**/
   animation: animate 3s linear infinite;
 }
 
 body label.menu h3 {
-    filter: drop-shadow(0 0 0px #FF8732) drop-shadow(0 0 0px #FF8732) drop-shadow(0 0 4px #FF8732)!important;
+    /**filter: drop-shadow(0 0 0px #FF8732) drop-shadow(0 0 0px #FF8732) drop-shadow(0 0 4px #FF8732)!important;**/
 }
 
 
@@ -494,7 +495,7 @@ body input[type=radio][name=planet].planet1:checked + label > .info h2 .pip {
 }
 body input[type=radio][name=planet].planet1:checked + label > .info h3 {
   opacity: 1;
-  color: #fea082;
+  color: grey;
 }
 
 .trajectory {

@@ -115,7 +115,7 @@ const PlanetInfo = () => {
                 <div className='solar_systm'>
                     <div className='planet mercury'>
                         <div className='planet_description mercury'>
-                            <h2>Velkommen</h2>
+                            <h2>IMPACT</h2>
                             <h1>Rasmus Jensen Portfolio</h1>
                             <p>Fueled by curiosity, driven by innovation – explore the fast-paced world of my digital creations.</p>
                             <label for='readMercury'>
@@ -212,9 +212,9 @@ const PlanetInfo = () => {
                         <div className='trajectory eu'></div>
                         <div className='trajectory ga'></div>
                         <div className='planet_description jupiter'>
-                            <h2>Planet</h2>
-                            <h1>Jupiter</h1>
-                            <p>Jupiter is the largest planet in the solar systm. Fittingly, it was named after the king of the gods in Roman mythology.</p>
+                            <h2>Picture</h2>
+                            <h1>Album</h1>
+                            <p>Capturing moments, one photo at a time. A journey through memories, framed for a lifetime.</p>
                             <label for='readJupiter'>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a>
@@ -244,9 +244,9 @@ const PlanetInfo = () => {
                         <div className='trajectory di'></div>
                         <div className='trajectory enc'></div>
                         <div className='planet_description saturn'>
-                            <h2>Planet</h2>
-                            <h1>Saturn</h1>
-                            <p>Saturn is the sixth planet from the sun and the second largest planet in the solar systm. Saturn was the Roman name for Cronus, the lord of the Titans.</p>
+                            <h2>Developer</h2>
+                            <h1>Guides</h1>
+                            <p>Unlocking the secrets of coding, one guide at a time. Empowering you to build better, faster, and smarter solutions.</p>
                             <label for='readSaturn'>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a>
@@ -276,9 +276,9 @@ const PlanetInfo = () => {
                         <div className='trajectory ari'></div>
                         <div className='trajectory umb'></div>
                         <div className='planet_description uranus'>
-                            <h2>Planet</h2>
-                            <h1>Uranus</h1>
-                            <p>The first planet to be discovered by scientists. The planet is notable for its dramatic tilt, which causes its axis to point nearly directly at the sun.</p>
+                            <h2>GET IN</h2>
+                            <h1>Contact</h1>
+                            <p>Have a question or just want to chat? Reach out, and let's make things happen!</p>
                             <label for='readUranus'>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a>
