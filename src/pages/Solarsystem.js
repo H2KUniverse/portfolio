@@ -8,6 +8,15 @@ const PlanetInfo = () => {
         <div>
             <h1 className='logo'>
                 Veni vidi vici
+                <br /><br />
+                <p style={{ fontSize: "8px", maxWidth: "40%", margin: "0 auto", textAlign: "center" }}>
+                    "...the building blocks of your body—nitrogen, iron, carbon—all of it can be traced back to cosmic forges deep within the hearts of stars. Through thermonuclear fusion, these stars undergo explosive events, scattering enriched elements into gas clouds, forming the next generation of star systems.
+                    <br /><br />
+                    So when you look out into the universe and say,
+                    'Yes, I exist in this universe, but I feel so small'... no buddy.
+                    <br /><br />
+                    <i>the universe lives within you, and you should feel vast."</i>
+                </p>
             </h1>
             {/**
             <input checked='checked'  className='planet9' id='pluto' name='planet' type='radio'></input>
@@ -533,14 +542,8 @@ const PlanetInfo = () => {
 
 
 
-                <h2>Saturn was known to the ancients, including the Babylonians and Far Eastern observers.</h2>
-                <p>It is named for the Roman god Saturnus, and was known to the Greeks as Cronus.</p>
+                <h2>Hope you found something inteerresting!</h2>
 
-                <h2>Saturn is the flattest planet.</h2>
-                <p>Its polar diameter is 90% of its equatorial diameter, this is due to its low density and fast rotation. Saturn turns on its axis once every 10 hours and 34 minutes giving it the second-shortest day of any of the solar system’s planets.</p>
-
-                <h2>Saturn orbits the Sun once every 29.4 Earth years.</h2>
-                <p>Its slow movement against the backdrop of stars earned it the nickname of “Lubadsagush” from the ancient Assyrians. The name means “oldest of the old”.</p>
             </div>
             <input className='read' id='readUranus' name='uranusRead' type='radio'></input>
             <label className='closeBig' for='closeUranus'></label>
