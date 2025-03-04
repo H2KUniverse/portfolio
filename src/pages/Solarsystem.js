@@ -9,6 +9,7 @@ const PlanetInfo = () => {
             <h1 className='logo'>
                 Rasmus Portfolio
             </h1>
+            {/**
             <input checked='checked'  className='planet9' id='pluto' name='planet' type='radio'></input>
             <label className='pluto menu' for='pluto'>
                 <div className='preview'></div>
@@ -31,31 +32,31 @@ const PlanetInfo = () => {
                     <h3>30.06 AU</h3>
                 </div>
             </label>
-            {/**
-            <input checked='checked'  className='planet7' id='uranus' name='planet' type='radio'></input>
+            **/}
+            <input checked='checked' className='planet7' id='uranus' name='planet' type='radio'></input>
             <label className='uranus menu' for='uranus'>
                 <div className='preview'></div>
                 <div className='info'>
                     <h2>
                         <div className='pip'></div>
-                        Unknown
+                        Contact
                     </h2>
                     <h3>19.18 AU</h3>
                 </div>
             </label>
-            <input checked='checked'  className='planet6' id='saturn' name='planet' type='radio'></input>
+            <input checked='checked' className='planet6' id='saturn' name='planet' type='radio'></input>
             <label className='saturn menu' for='saturn'>
                 <div className='preview'></div>
                 <div className='info'>
                     <h2>
                         <div className='pip'></div>
-                        Unknown
+                        Guides
                     </h2>
                     <h3>9.539 AU</h3>
                 </div>
             </label>
-            **/}
-            <input checked='checked'  className='planet5' id='jupiter' name='planet' type='radio'></input>
+
+            <input checked='checked' className='planet5' id='jupiter' name='planet' type='radio'></input>
             <label className='jupiter menu' for='jupiter'>
                 <div className='preview'></div>
                 <div className='info'>
