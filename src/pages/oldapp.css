@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden; /* Prevent page scroll */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+.app-container {
+  display: flex;
+  height: 100%; /* Ensure the container takes the full height */
+}
+
+.sidebar {
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.imgLogo {
+  max-width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px; /* To give some space at the top */
+  overflow: hidden; /* Ensure no overflow */
+  z-index: 10; /* Ensure sidebar is on top of other content */
+}
+
+/* Container for navigation and beam */
+.sidebar nav {
+  flex: 1; /* Allow nav to take up available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch; /* Ensure nav items stretch across */
+  position: relative; /* Necessary for positioning the beam inside */
+  width: 100%;
+}
+
+/* Navigation list styling */
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar nav ul li {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  position: relative; /* Necessary for positioning the active beam */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar nav ul li:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+.sidebar nav ul li.active {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Active Beam */
+.sidebar .active-beam {
+  position: absolute;
+  right: 0;
+  width: 10px; /* Width of the beam */
+  background-color: white;
+  transition: top 0.3s ease, height 0.3s ease;
+  z-index: 5; /* Ensure beam is above other elements */
+}
+
+
+/* Optional: Add some padding or margins to space out the nav items */
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  height: 100%; /* Full height of the screen */
+  overflow-y: auto; /* Allow vertical scrolling inside content */
+  width: calc(100% - 250px); /* Adjust content width for sidebar */
+  perspective: 1000px; /* Add 3D perspective */
+}
+
+/* Section Styling */
+section {
+  width: calc(100% - 10px);
+  margin-left: 6px;
+  text-align: center;
+  height: 95vh; /* Almost full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  transform: rotateX(90deg); /* Start fully rotated, off-screen */
+  animation: sectionFlipIn 2s cubic-bezier(0.25, 0, 0.5, 1) forwards; /* Custom easing */
+  overflow-x: hidden; /* Prevent overflow to the right */
+  position: relative;
+}
+
+
+
+/* Keyframe for the section animation */
+@keyframes sectionFlipIn {
+  0% {
+    transform: rotateX(90deg); /* Start fully off-screen, rotated */
+  }
+  100% {
+    transform: rotateX(0deg); /* End in normal view */
+  }
+}
+
+/* Ensure content inside the section is upright */
+section > * {
+  transform: rotateX(180deg); /* Start flipped */
+  animation: contentFlipBack 2s cubic-bezier(0.25, 0, 0.5, 1) forwards; /* Same easing for smoothness */
+}
+
+/* Keyframe for the content inside the section */
+@keyframes contentFlipBack {
+  0% {
+    transform: rotateX(180deg); /* Start flipped */
+  }
+  100% {
+    transform: rotateX(0deg); /* End upright */
+  }
+}
+
+h1, h2 {
+  color: #f1f1f1;
+}
+
+section h2 {
+  color: #ffcc00;
+}
+
+section ul {
+  list-style: none;
+}
+
+section ul li {
+  margin: 5px 0;
+}
+
+.home p, .about p, .skills ul, .projects p, .contact p {
+  font-size: 1.1rem;
+}
+
+.projects::-webkit-scrollbar {
+  width: 0px; /* Hide the scrollbar */
+  height: 0px; /* Hide the scrollbar for horizontal scroll */
+}
+
+.projects::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Ensure the scrollbar is transparent */
+}
+
+/* Console */
+
+/* Console Container */
+.console {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Console Header */
+.console-header {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Console Input */
+.console-input {
+  width: 100%;
+  height: 150px;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+}
+
+/* Console Button */
+.console-btn {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.console-btn:hover {
+  background-color: #777;
+}
+
+/* Console Output */
+.console-output {
+  margin-top: 15px;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  color: #f4f4f4;
+  min-height: 100px;
+  overflow-y: auto;
+}
+
+.console-output pre {
+  white-space: pre-wrap; /* Allow long lines to wrap */
+  word-break: break-word;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar input:focus {
+  background-color: #1e1e1e;
+  outline: none;
+}
+
+/* Tabs Container with scroll */
+.tabs-container {
+  width: 100%;
+  overflow-x: auto; /* Make it horizontally scrollable */
+  padding: 10px 0;
+  margin: 10px 0;
+  box-sizing: border-box;
+  white-space: nowrap; /* Prevent tabs from wrapping to the next line */
+}
+
+.tabs {
+  display: flex; /* Change from inline-flex to flex */
+  flex-wrap: wrap; /* Allow tabs to wrap to the next line */
+  gap: 1rem; /* Spacing between tabs */
+  margin-left: 10px; /* Optional: Add left margin for space */
+}
+
+.tab {
+  flex: 0 0 auto; /* Prevent the tab from shrinking or growing */
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  min-width: 100px; /* Ensure tabs have a minimum width */
+}
+
+.tab.active {
+  background-color: #ffcc00;
+  color: #121212;
+  border-bottom: 2px solid #ffcc00;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 4px rgba(255, 204, 0, 0.8);
+}
+
+.tab:hover {
+  background-color: #444;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 4px rgba(255, 204, 0, 0.6);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Console Header */
+.console-header {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.console-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Projects Section */
+.projects {
+  padding: 2rem;
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  overflow-y: scroll; /* Enable scrolling */
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projects p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout for Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 1.5rem; /* Space between cards */
+  grid-auto-rows: 1fr;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Make space for the icon */
+  height: 100%;
+  position: relative; /* Allow positioning of the icon */
+  overflow: visible; /* Allow the icon to overflow the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.6);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-card span {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Top-left GitHub Icon */
+.top-left-github {
+  position: absolute;
+    top: -7%;
+    left: -5%;
+    font-size: 3rem;
+  color: #fff;
+  transform: translate(0, 0); /* Adjust the icon's final position */
+  filter: drop-shadow(0 0 1px #ff7f00) drop-shadow(0 0 2px #ff7f00) drop-shadow(0 0 3px #ff7f00); /* Orange glow */
+}
+
+/* Glowing Blue Effect for the GitHub Icon */
+.github-icon {
+  display: inline-block;
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 14px; /* Pushes the icon to the bottom */
+  align-self: center; /* Centers the icon horizontally */
+  cursor: pointer;
+  animation: animate 3s linear infinite;
+  filter: drop-shadow(0 0 2px #00b5ff) drop-shadow(0 0 4px #00b5ff) drop-shadow(0 0 6px #00b5ff);
+}
+
+/* Glowing Blue Effect */
+.github-icon:hover {
+  transform: scale(1.1);
+}
+
+.h2projects {
+  margin-top: 27vh;
+}

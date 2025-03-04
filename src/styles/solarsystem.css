@@ -143,31 +143,31 @@ body label {
   cursor: pointer;
 }
 body label.mercury > .preview {
-  background: url("https://www.solarsystemscope.com/images/textures/full/2k_makemake_fictional.jpg") !important;
+  background: url('../images/output.jpg') !important;
 }
 body label.venus > .preview {
-  background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Fsports-car&psig=AOvVaw15HOjlnhGLJNqLxEbt4hM0&ust=1741171423164000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjY35Kf8IsDFQAAAAAdAAAAABAE") !important;
+  background: url('../images/output.jpg') !important;
 }
 body label.earth > .preview {
-  background: url("https://img00.deviantart.net/04ef/i/2009/114/3/e/new_earth_texture_map_by_lightondesigns.jpg") !important;
+  background: url('../images/output.jpg') !important;
 }
 body label.mars > .preview {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_texture.jpg") !important;
+  background: url('../images/output.jpg') !important;
 }
 body label.jupiter > .preview {
-  background: url("https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07782_hires.jpg") !important;
+  background: url('../images/output.jpg') !important;
 }
 body label.saturn > .preview {
-  background: url("https://www.solarsystemscope.com/images/textures/full/2k_saturn.jpg") !important;
+  background: url('../images/output.jpg') !important;
 }
 body label.uranus > .preview {
-  background: url("https://img00.deviantart.net/957c/i/2017/165/4/9/uranus_texture_map_by_jcpag2010-db7yjwb.png") !important;
+  background: url('../images/output.jpg') !important;
 }
 body label.neptune > .preview {
-  background: url("https://img00.deviantart.net/f068/i/2017/165/b/c/neptune_texture_map_by_jcpag2010-dbcjcv5.png") !important;
+  background: url('../images/output.jpg') !important;
 }
 body label.pluto > .preview {
-  background: url("https://pre00.deviantart.net/4677/th/pre/f/2015/314/4/e/pluto_map__2015_nov_10__by_snowfall_the_cat-d918tlb.png") !important;
+  background: url('../images/output.jpg') !important;
 }
 body label.menu {
   color: white;
@@ -181,7 +181,6 @@ body label.menu:after {
   display: block;
   width: 12px;
   height: 12px;
-  border: 2px solid white;
   border-radius: 60px;
   content: "";
   z-index: 2;
@@ -234,15 +233,25 @@ body label.menu .info {
   left: 50px;
   top: 1px;
 }
+
+
 body label.menu h2,
 body label.menu h3 {
   text-transform: uppercase;
   margin: 0;
   font-weight: 100;
   letter-spacing: 2px;
+  filter: drop-shadow(0 0 0px white) drop-shadow(0 0 0px white) drop-shadow(0 0 4px white);
+  animation: animate 3s linear infinite;
 }
+
+body label.menu h3 {
+    filter: drop-shadow(0 0 0px #FF8732) drop-shadow(0 0 0px #FF8732) drop-shadow(0 0 4px #FF8732)!important;
+}
+
+
 body label.menu h2 {
-  font-size: 11px;
+  font-size: 14px;
   opacity: 0.4;
   margin-bottom: 4px;
 }
@@ -296,7 +305,7 @@ body .read:checked + label + input + .panel {
   right: 0;
 }
 body .read:checked + label {
-  width: calc(100% - 420px);
+  width: calc(100% - 1080px);
 }
 body .read:checked + label::after {
   opacity: 1;
@@ -327,7 +336,7 @@ body label.closeBig {
   transition: all 0.2s;
   z-index: 10;
   width: 0;
-  background: rgba(56, 37, 99, 0.38);
+  background: rgba(56, 37, 99, 0.70);
 }
 body label.closeBig::after {
   content: "Back";
@@ -489,6 +498,11 @@ body input[type=radio][name=planet].planet1:checked + label > .info h3 {
   opacity: 1;
   color: #fea082;
 }
+
+.trajectory {
+    opacity: 0!important;
+}
+
 body input[type=radio][name=planet] {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -2075,6 +2089,9 @@ body .solar_systm .planet.neptune .trajectory.tri {
   left: -210px;
   top: -189px;
 }
+.moon {
+    opacity: 0!important;
+}
 body .solar_systm .planet.neptune .trajectory.pro {
   width: 1530px;
   height: 1530px;
@@ -2230,8 +2247,8 @@ body .solar_systm .planet_description a span {
 }
 body .panel {
   position: absolute;
-  right: -520px;
-  width: 300px;
+  right: -1100px;
+  width: 960px;
   top: 0;
   height: 100vh;
   transition: all 0.2s;
