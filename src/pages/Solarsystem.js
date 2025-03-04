@@ -73,7 +73,7 @@ const PlanetInfo = () => {
                         <div className='pip'></div>
                         Picture album
                     </h2>
-                    <h3>A picture album crafted for my daughter—capturing memories today, inspiring a digital future tomorrow. 😉</h3>
+                    <h3>A picture album crafted for my daughter—capturing memories today, inspiring a digital future tomorrow.</h3>
                 </div>
             </label>
             <input checked='checked' className='planet4' id='mars' name='planet' type='radio'></input>
@@ -443,17 +443,34 @@ const PlanetInfo = () => {
             <input className='read' id='closeMars' name='marsRead' type='radio'></input>
             <div className='panel'>
                 <h1>Unity</h1>
-                <p>Mars is the fourth planet from the sun. Befitting the red planet's bloody color, the Romans named it after their god of war. The Romans copied the ancient Greeks, who also named the planet after their god of war, Ares. Other civilizations also typically gave the planet names based on its color — for example, the Egyptians named it "Her Desher," meaning "the red one," while ancient Chinese astronomers dubbed it "the fire star."</p>
+                <p>
+                    Bringing games to the web has never been easier. With Unity, you can seamlessly integrate immersive 3D experiences directly into browsers,
+                    unlocking new possibilities for interactive storytelling, simulations, and multiplayer gaming. Whether it's high-fidelity graphics, physics-based mechanics,
+                    or real-time multiplayer functionality, Unity empowers developers to push the boundaries of web gaming.
+                </p>
                 <UnityGame></UnityGame>
-                <h2>Mars and Earth have approximately the same landmass.</h2>
-                <p>Even though Mars has only 15% of the Earth’s volume and just over 10% of the Earth’s mass, around two thirds of the Earth’s surface is covered in water. Martian surface gravity is only 37% of the Earth’s (meaning you could leap nearly three times higher on Mars).</p>
-                <h2>Mars is home to the tallest mountain in the solar systm.</h2>
-                <p>Olympus Mons, a shield volcano, is 21km high and 600km in diameter. Despite having formed over billions of years, evidence from volcanic lava flows is so recent many scientists believe it could still be active.</p>
-                <h2>Only 18 missions to Mars have been successful.</h2>
-                <p>As of September 2014 there have been 40 missions to Mars, including orbiters, landers and rovers but not counting flybys. The most recent arrivals include the Mars Curiosity mission in 2012, the MAVEN mission, which arrived on September 22, 2014, followed by the Indian Space Research Organization’s MOM Mangalyaan orbiter, which arrived on September 24, 2014. The next missions to arrive will be the European Space Agency’s ExoMars mission, comprising an orbiter, lander, and a rover, followed by NASA’s InSight robotic lander mission, slated for launch in March 2016 and a planned arrival in September, 2016.</p>
-                <h2>Mars has the largest dust storms in the solar systm.</h2>
-                <p>They can last for months and cover the entire planet. The seasons are extreme because its elliptical (oval-shaped) orbital path around the Sun is more elongated than most other planets in the solar systm.</p>
+                <h2>Seamless Web Integration</h2>
+                <p>
+                    Unity WebGL enables developers to run games directly in the browser without additional plugins. With optimized rendering and responsive controls,
+                    players can enjoy smooth gameplay across various devices, from desktops to mobile browsers.
+                </p>
+                <h2>Cross-Platform Performance</h2>
+                <p>
+                    Unity’s robust engine allows for effortless deployment across multiple platforms. Whether you're building a fast-paced FPS, an immersive VR experience,
+                    or a casual 2D game, Unity ensures performance optimization across different hardware configurations.
+                </p>
+                <h2>Expand with AI & Cloud Technologies</h2>
+                <p>
+                    Take your games to the next level with AI-driven interactions and cloud-powered services. Leverage machine learning for NPC behavior,
+                    integrate cloud storage for player progress, and deploy scalable multiplayer solutions to connect gamers worldwide.
+                </p>
+                <h2>Built for Innovation</h2>
+                <p>
+                    Unity’s flexible architecture and vast asset store provide endless possibilities for developers to experiment, prototype, and build groundbreaking experiences.
+                    With support for modern frameworks and APIs, Unity is the perfect playground for innovation in web gaming.
+                </p>
                 <br></br>
+
             </div>
             <input className='read' id='readJupiter' name='jupiterRead' type='radio'></input>
             <label className='closeBig' for='closeJupiter'></label>

@@ -30,7 +30,7 @@ const UnityGame = () => {
         src={`${process.env.PUBLIC_URL}/unityBuild/index.html`}
         style={{
           width: "100%",    
-          height: "100vh",  
+          height: "75vh",  
           border: "none",   
           overflow: "hidden",
         }}
