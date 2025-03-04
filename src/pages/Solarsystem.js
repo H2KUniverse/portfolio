@@ -7,7 +7,7 @@ const PlanetInfo = () => {
     return (
         <div>
             <h1 className='logo'>
-                Rasmus Portfolio
+                Veni vidi vici
             </h1>
             {/**
             <input checked='checked'  className='planet9' id='pluto' name='planet' type='radio'></input>
