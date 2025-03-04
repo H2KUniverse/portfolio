@@ -143,25 +143,25 @@ body label {
   cursor: pointer;
 }
 body label.mercury > .preview {
-  background: url('../images/output.jpg') !important;
+  background: url('../images/impact.jpg') !important;
 }
 body label.venus > .preview {
   background: url('../images/output.jpg') !important;
 }
 body label.earth > .preview {
-  background: url('../images/output.jpg') !important;
+  background: url('../images/portfolio.jpg') !important;
 }
 body label.mars > .preview {
-  background: url('../images/output.jpg') !important;
+  background: url('../images/unity.jpg') !important;
 }
 body label.jupiter > .preview {
-  background: url('../images/output.jpg') !important;
+  background: url('../images/picturealbum1.jpg') !important;
 }
 body label.saturn > .preview {
-  background: url('../images/output.jpg') !important;
+  background: url('../images/guides.jpg') !important;
 }
 body label.uranus > .preview {
-  background: url('../images/output.jpg') !important;
+  background: url('../images/contact.jpg') !important;
 }
 body label.neptune > .preview {
   background: url('../images/output.jpg') !important;
@@ -226,7 +226,6 @@ body label.menu .preview {
   background-size: auto 100% !important;
   position: absolute;
   border-radius: 100px;
-  box-shadow: 0 -13px 10px 2px black inset;
 }
 body label.menu .info {
   position: relative;

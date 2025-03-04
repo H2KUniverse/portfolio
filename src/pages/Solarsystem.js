@@ -41,7 +41,7 @@ const PlanetInfo = () => {
                         <div className='pip'></div>
                         Contact
                     </h2>
-                    <h3>19.18 AU</h3>
+                    <h3>Got questions? Let's make things happen!</h3>
                 </div>
             </label>
             <input checked='checked' className='planet6' id='saturn' name='planet' type='radio'></input>
@@ -52,7 +52,7 @@ const PlanetInfo = () => {
                         <div className='pip'></div>
                         Guides
                     </h2>
-                    <h3>9.539 AU</h3>
+                    <h3>Step-by-step insights to level up your skills—clear, concise, and straight to the point!</h3>
                 </div>
             </label>
 
@@ -64,7 +64,7 @@ const PlanetInfo = () => {
                         <div className='pip'></div>
                         Picture album
                     </h2>
-                    <h3>5.203 AU</h3>
+                    <h3>A picture album crafted for my daughter—capturing memories today, inspiring a digital future tomorrow. 😉</h3>
                 </div>
             </label>
             <input checked='checked' className='planet4' id='mars' name='planet' type='radio'></input>
